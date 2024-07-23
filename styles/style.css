@@ -160,7 +160,7 @@
 .lots {
   width: 1052px;
   height: 692px;
-  margin: 179px 24px 146px 24px;
+  margin: 179px 24px 181px 24px;
   border: solid #5b6dcd 1px;
 }
 
@@ -246,6 +246,52 @@
 }
 
 /* начало about */
+
+.about {
+  margin-left: 24px;
+  margin-right: 24px;
+  width: 1052px;
+  height: 595px;
+}
+
+.about__column {
+  display: grid;
+  grid-template-columns: 334px auto;
+  grid-template-rows: 250px auto;
+  gap: 0px 25px;
+}
+
+.about__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  width: 240px;
+  height: 240px;
+  background: #000;
+  border-radius: 50%;
+}
+
+.about__logo-image {
+  width: 148px;
+  height: 114px;
+}
+
+.about__title {
+  align-self: center;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.about__text {
+  grid-column: 2/3;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+}
+
+.about__column > p:first-child {
+}
 
 /* начало footer */
 
