@@ -250,11 +250,6 @@
 .about {
   margin-left: 24px;
   margin-right: 24px;
-  width: 1052px;
-  height: 595px;
-}
-
-.about__column {
   display: grid;
   grid-template-columns: 334px auto;
   grid-template-rows: 250px auto;
@@ -290,7 +285,8 @@
   letter-spacing: 0.01em;
 }
 
-.about__column > p:first-child {
+.about__text > p:not(:last-child) {
+  margin-bottom: 24px;
 }
 
 /* начало footer */
