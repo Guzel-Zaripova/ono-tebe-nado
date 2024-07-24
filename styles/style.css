@@ -1,7 +1,7 @@
 .header {
   display: grid;
   align-items: center;
-  grid-template-columns: 391.5px 148px 350px;
+  grid-template-columns: 1fr 0fr 1fr;
   gap: 2em;
   margin: 92px 24px 96px 24px;
   padding-left: 26.5px;
@@ -33,6 +33,7 @@
 
 .address {
   font-style: normal;
+  width: 240.5px;
 }
 
 .header__address {
@@ -263,10 +264,6 @@
   display: flex;
   justify-content: space-between;
   margin: 180px 50px 88px 50px;
-}
-
-.footer > address {
-  width: 240.5px;
 }
 
 .footer__links-list {
