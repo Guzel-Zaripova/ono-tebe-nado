@@ -81,11 +81,13 @@
   z-index: 1;
   font-weight: bold;
   font-size: 100px;
-  line-height: 1.22em;
-  margin-bottom: 125px;
+  line-height: 1.23em;
+  margin-bottom: 122px;
 }
 
 .aligned-text {
+  display: block;
+  text-align: left;
   padding-left: 50px;
   letter-spacing: 0.3em;
 }
@@ -95,12 +97,16 @@
 }
 
 .aligned-text_center {
-  padding-left: 336px;
+  display: block;
+  text-align: center;
+  padding-right: 30px;
   letter-spacing: 0.3em;
 }
 
 .aligned-text_right {
-  padding-left: 634px;
+  display: block;
+  text-align: right;
+  padding-right: 20px;
   letter-spacing: 0.3em;
 }
 
