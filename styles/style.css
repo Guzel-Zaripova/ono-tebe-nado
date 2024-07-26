@@ -26,6 +26,10 @@
   text-underline-offset: 3px;
 }
 
+.links-list-item_active > a {
+  text-decoration: none;
+}
+
 .header__logo {
   width: 148px;
   height: 105px;
@@ -47,10 +51,11 @@
 .cover {
   position: relative;
   background: url(../images/cover.jpg);
-  width: 1100px;
-  height: 757px;
   background-size: cover;
   background-position: center;
+  width: 1100px;
+  padding-top: 160px;
+  padding-bottom: 51px;
 }
 
 .overlay {
@@ -60,8 +65,7 @@
   opacity: 0.6;
   width: 100%;
   height: 100%;
-  top: 0;
-  left: 0;
+  inset: 0;
 }
 
 .cover__title,
@@ -77,8 +81,8 @@
   z-index: 1;
   font-weight: bold;
   font-size: 100px;
-  padding-top: 165px;
   line-height: 1.22em;
+  margin-bottom: 125px;
 }
 
 .aligned-text {
@@ -110,12 +114,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 125px 50px 0px 78px;
+  padding-right: 50px;
+  padding-left: 78px;
 }
 
 .cover__description-text {
-  left: 78px;
-  top: 667px;
   font-weight: 400;
   font-size: 22px;
   word-spacing: 0.84em;
@@ -132,7 +135,6 @@
 
 .lots {
   width: 1052px;
-  height: 692px;
   margin: 179px 24px 181px 24px;
 }
 
@@ -147,13 +149,11 @@
   justify-content: space-between;
   flex-wrap: wrap;
   gap: 1.3em;
-  min-width: 1052px;
   margin-bottom: 30px;
 }
 
 .lots__card-list-item {
   width: 334px;
-  min-height: 563px;
   flex-grow: 1;
 }
 
@@ -172,25 +172,24 @@
   padding: 51px 40px 48px 40px;
 }
 
-.card_type_film {
+.card_type_film,
+.card_type_book,
+.card_type_picture {
   z-index: -1;
-  background: url(../images/card-lot-01.jpg);
   background-size: cover;
   background-position: center;
+}
+
+.card_type_film {
+  background: url(../images/card-lot-01.jpg);
 }
 
 .card_type_book {
-  z-index: -1;
   background: url(../images/card-lot-02.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .card_type_picture {
-  z-index: -1;
   background: url(../images/card-lot-03.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 .card__title {
@@ -258,7 +257,6 @@
 
 .footer {
   width: 1000px;
-  height: 98px;
   display: flex;
   justify-content: space-between;
   margin: 180px 50px 88px 50px;
